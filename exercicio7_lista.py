@@ -1,6 +1,6 @@
 import math
 
-numero = float(input("Num:"))
+numero = float(input("Num: "))
 
 if numero >= 0:
     raiz = math.sqrt(numero)
