@@ -1,3 +1,10 @@
+def inverte(dicionario: dict) -> dict:
+    retorno = {}
+    for key in dicionario:
+        value = dicionario[key]
+        retorno[value] = key
+    return retorno
+
 eng_pt = {
     "door": "porta",
     "grape": "uva",
@@ -9,8 +16,10 @@ eng_pt = {
 eng_pt ['orange'] = "laranja"
 eng_pt[911] = 190
 
-for key in eng_pt:
-    print(key)
+pt_eng = inverte(eng_pt)
 
-for value in eng_pt.values():
-    print(value)
+#for value in pt_eng.values():
+#    print(value)
+
+for key in pt_eng:
+    print(f"{key} => {pt_eng[key]}")
